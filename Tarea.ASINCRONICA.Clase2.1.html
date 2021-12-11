@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tarea Asincrónica</title>
+</head>
+<body>
+    <h3>Tarea Asincrónica</h3>
+    <p>valor Radio:<input type="text" name="n1" id="v1"></p>
+    <p>valor Diámetro:<input type="text" name="res" id="res"></p>
+    <p>valor Perímetro:<input type="text" name="res1" id="res1"></p>
+    <p>Valor Área: <input type="text" name="res2" id="res2"></p>
+    
+    <button onclick="Calcular();">Diámetro</button>
+    <button onclick="Calcular1();">Perímetro</button>
+    <button onclick="Calcular2();">Área</button>
+
+    <script type="text/javascript">
+
+            function Calcular(){
+            let v1=document.getElementById('v1').value;
+            let vv1=parseFloat(v1,10);
+            let Dia=vv1*2;
+            document.getElementById('res').value=Dia;
+            
+        }
+            function Calcular1(){
+            let v1=document.getElementById('v1').value;
+            let vv1=parseFloat(v1,10);
+            let Per=vv1*Math.PI*2;
+            document.getElementById('res1').value=Per;
+            
+
+        }
+            function Calcular2(){
+            let v1=document.getElementById('v1').value;
+            let vv1=parseFloat(v1,10);
+            let Are=Math.PI*(vv1*vv1);
+            document.getElementById('res2').value=Are;
+            
+        }
+        
+    </script>
+</body>
+</html>
